@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "255876500135",
+    "firebase_url": "https://kinokotlin.firebaseio.com",
+    "project_id": "kinokotlin",
+    "storage_bucket": "kinokotlin.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:255876500135:android:f691e62cc946fc98",
+        "android_client_info": {
+          "package_name": "com.example.kinokotlin"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "255876500135-711t97pr64nov5lce2r9idsgbscn03a1.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAbSKrZ5oYIPZsJl5g5NM0rQd6_SKLfpfI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "255876500135-711t97pr64nov5lce2r9idsgbscn03a1.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

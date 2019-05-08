@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="margin">10dp</dimen>
+    <dimen name="poster_width">130dp</dimen>
+    <dimen name="poster_height">200dp</dimen>
+    <dimen name="padding">15dp</dimen>
+    <dimen name="margin_top">35dp</dimen>
+    <dimen name="text_size">25sp</dimen>
+    <dimen name="margin_btn">5dp</dimen>
+</resources>

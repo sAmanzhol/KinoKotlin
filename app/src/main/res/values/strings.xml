@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">KinoKotlin</string>
+    <string name="popular_menu_label">Popular</string>
+    <string name="top_rated_menu_label">Top rated</string>
+    <string name="upcoming_menu_label">Upcoming</string>
+    <string name="latest_menu_label">Latest</string>
+    <string name="now_playing_menu_label">Now playing</string>
+    <string name="open">Open</string>
+    <string name="close">Close</string>
+    <string name="title">Title:</string>
+    <string name="overview">Overview:</string>
+    <string name="vote_average">Vote average:</string>
+    <string name="release_date">Release date:</string>
+    <string name="genre">Genre:</string>
+    <string name="read_more">Read more</string>
+    <string name="actors">Actors:</string>
+    <string name="official_trailer">Official Trailer:</string>
+
+    <string name="login_str">Login</string>
+    <string name="password_str">Password</string>
+    <string name="sign_up_str">Sign up</string>
+    <string name="email_str">Email</string>
+    <string name="title_str">Title</string>
+    <string name="content_str">Content</string>
+    <string name="name_str">Name</string>
+    <string name="surname_str">Surname</string>
+    <string name="back_str">Back</string>
+    <string name="log_out_str">Log out</string>
+    <string name="save_str">Save</string>
+    <string name="logout_str">Logout</string>
+    <string name="log_in">Log In</string>
+</resources>

@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+    <android.support.constraint.ConstraintLayout
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:context=".activity.MovieDetailsActivity">
+
+        <ImageView
+                android:id="@+id/backdrop"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/poster_height"
+                android:src="@drawable/backdrop"/>
+
+        <ImageView
+                android:id="@+id/poster"
+                android:layout_width="80dp"
+                android:layout_height="120dp"
+                android:layout_marginStart="32dp"
+                android:layout_marginLeft="32dp"
+                android:layout_marginTop="156dp"
+                android:src="@drawable/poster1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"/>
+
+
+        <TextView
+                android:id="@+id/movie_detail_title"
+                android:layout_width="130dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginRight="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/poster"
+                app:layout_constraintTop_toBottomOf="@id/backdrop"
+                tools:text="AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA"/>
+
+
+        <android.support.constraint.ConstraintLayout
+                android:id="@+id/mid"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="0dp"
+                android:layout_marginLeft="0dp"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/border"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/poster">
+
+            <ImageButton
+                    android:id="@+id/add_movie"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginStart="16dp"
+                    android:layout_marginLeft="16dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/like"
+                    app:layout_constraintStart_toStartOf="parent"/>
+
+            <TextView
+                    android:id="@+id/remove_movie"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="50dp"
+                    android:layout_marginLeft="50dp"
+                    android:text="Add to favourites"
+                    app:layout_constraintStart_toStartOf="@id/add_movie"/>
+
+            <TextView
+                    android:id="@+id/rating"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:text="9.1"
+                    android:textColor="@color/black"
+                    android:textSize="25sp"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+
+            <ImageView
+                    android:id="@+id/star"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_marginEnd="8dp"
+                    android:layout_marginRight="8dp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/star"
+                    app:layout_constraintEnd_toEndOf="parent"/>
+        </android.support.constraint.ConstraintLayout>
+
+        <TextView
+                android:id="@+id/description"
+                android:layout_width="313dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginRight="8dp"
+                android:text="Arthur Curry learns that he is the heir to the underwater kingdom of Atlantis, and must step forward to lead his people and be a hero to the world."
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/mid"/>
+        <TextView
+                android:id="@+id/actors_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/actors"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="12dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/description"/>
+
+        <LinearLayout
+                android:id="@+id/actor_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="@dimen/padding"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actors_label">
+
+            <ImageView
+                    android:id="@+id/actor_1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+            <ImageView
+                    android:id="@+id/actor_2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+            <ImageView
+                    android:id="@+id/actor_3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+            <ImageView
+                    android:id="@+id/actor_4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+            <ImageView
+                    android:id="@+id/actor_5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"/>
+
+        </LinearLayout>
+
+        <TextView
+                android:id="@+id/trailer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/official_trailer"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/actor_list"/>
+
+
+        <FrameLayout
+                android:id="@+id/trailer_video"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:foregroundGravity="center"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/trailer">
+
+            <ImageView
+                    android:id="@+id/backdrop_trailer"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/poster_height"
+                    android:src="@drawable/backdrop"/>
+
+            <ImageButton
+                    android:id="@+id/play_button"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:background="@null"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/play"
+                    android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <android.support.v7.widget.RecyclerView
+                android:id="@+id/logo_list"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="16dp"
+                android:layout_marginLeft="16dp"
+                android:layout_marginTop="2dp"
+                app:layout_constraintTop_toBottomOf="@id/trailer_video"
+                app:layout_constraintStart_toStartOf="parent"/>
+
+    </android.support.constraint.ConstraintLayout>
+</ScrollView>
